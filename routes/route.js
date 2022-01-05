@@ -5,6 +5,6 @@ const router = express.Router();
 
 const { getInfo } = require("../controllers/controller");
 
-router.post("/api/fileanalyse", upload.single("file"), getInfo);
+router.post("/api/fileanalyse", upload.single("upfile"), getInfo);
 
 module.exports = router;
